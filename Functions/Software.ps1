@@ -10,7 +10,7 @@
     )
 
     foreach ($id in $AppIds) {
-        Write-Host "`n[+] Installing: $id" -ForegroundColor Cyan
+        Write-Host "`n[+] Installing package: $id" -ForegroundColor Cyan
         winget install --id $id --exact --accept-package-agreements --accept-source-agreements
     }
 }

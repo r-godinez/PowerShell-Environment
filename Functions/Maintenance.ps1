@@ -1,6 +1,6 @@
 ﻿function Get-SystemSummary {
     param(
-        [string]$ComputerName = $env:COMPUTERNAME
+        [string]$ComputerName =$env:COMPUTERNAME
     )
 
     Write-Host "Fetching status for $ComputerName..." -ForegroundColor Cyan
